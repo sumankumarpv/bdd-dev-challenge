@@ -1,0 +1,7 @@
+Feature: Rest API testing
+
+Scenario: Create account record
+    Given I Set POST account service api endpoint
+When Set account details
+    And Send a POST HTTP request
+Then I receive valid Response201

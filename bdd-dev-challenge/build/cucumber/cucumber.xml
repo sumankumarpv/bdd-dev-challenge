@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0.665105">
+<testcase classname="Get greeting" name="Get greeting using appropriate caller" time="0.56673">
+<system-out><![CDATA[Given I use the caller Duke.................................................passed
+When I request a greeting...................................................passed
+Then I should get a response with HTTP status code 200......................passed
+And The response should contain the message Hello World, Duke...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Get greeting" name="Get greeting using appropriate caller 2" time="0.008379">
+<system-out><![CDATA[Given I use the caller Tux..................................................passed
+When I request a greeting...................................................passed
+Then I should get a response with HTTP status code 200......................passed
+And The response should contain the message Hello World, Tux................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get greeting" name="Get greeting using caller 0xCAFEBABE" time="0.024748">
+<system-out><![CDATA[Given I use the caller 0xCAFEBABE...........................................passed
+When I request a greeting...................................................passed
+Then I should get a response with HTTP status code 418......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Rest API testing Transfer" name="Transfer amount between accounts" time="0.065248">
+<system-out><![CDATA[Given I Set POST account transfer service api endpoint......................passed
+When Set transfer details...................................................passed
+And Send POST HTTP request..................................................passed
+Then We receive valid Response200...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
